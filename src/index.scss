@@ -4,6 +4,7 @@
   --accent: ##00a650;
   --white: #fff;
   --black: #000;
+  --grey: #c5c2c2;
   --background-main: #242424;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -41,13 +42,23 @@ body {
   width: 100%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 
 
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--black);
     background-color: var(--white);
+    color: var(--black);
   }
 }
 

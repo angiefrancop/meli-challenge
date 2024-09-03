@@ -8,8 +8,8 @@ export type SearchProps = {
 
 const Search: React.FC<SearchProps>  = ({}) => {
 	return (
-		<div>
- 			Search works!
+		<div className="container">
+ 			No resoults
  		</div>
 	);
 };

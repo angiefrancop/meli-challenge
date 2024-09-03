@@ -9,11 +9,11 @@ const routes = [
     element: <Search />
   },
   {
-    path: '/results',
+    path: '/items',
     element: <Results />
   },
   {
-    path: '/items',
+    path: '/items/:id',
     element: <Items />
   },
 ];
