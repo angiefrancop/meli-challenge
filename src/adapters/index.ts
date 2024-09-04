@@ -1,1 +1,2 @@
-export * from './items.adapter';
+export * from './item.adapter';
+export * from './itemsList.adapter';

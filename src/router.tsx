@@ -1,7 +1,8 @@
-import React from 'react';
-import { Search } from './pages';
-import { Results } from './pages';
-import { Items } from './pages';
+import React, { lazy } from 'react';
+
+const Search = lazy(() => import('./pages/search/search'));
+const Results = lazy(() => import('./pages/results/results'));
+const Items = lazy(() => import('./pages/items/items'));
 
 const routes = [
   {

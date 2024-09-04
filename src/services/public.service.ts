@@ -3,10 +3,9 @@ import { loadAbort } from '../utilities';
 import { Item } from '../models';
 
 export const getItems = (search: string) => {
-  const LIMIT_ITEMS = 4;
   const controller = loadAbort();
   return {
-    call: axios.get<Item>(`${import.meta.env.VITE_API_SEARCH}${search}&limit=${LIMIT_ITEMS}`,{signal: controller.signal}),
+    call: axios.get<Item>(`${import.meta.env.VITE_API_SEARCH}${search}`,{signal: controller.signal}),
     controller
   };
 }

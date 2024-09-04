@@ -1,3 +1,54 @@
 .items {
-  
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 3px;
+
+  padding: 1rem;
+  &__info{
+    display: flex;
+    flex-direction: column;
+    flex: 1 ;
+    &__picture{
+      height: 100%;
+      min-height: 450px;
+      position: relative;
+      width: 400px;
+
+      img{
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+  &__buy{
+    width: 100%;
+
+    h1{
+      font-size: 1rem;
+      margin-top: 0;
+    }
+
+    h2{
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .items {
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    &__buy{
+      width: 20%;
+      max-width: 300px;
+
+    }
+
+  }
 }

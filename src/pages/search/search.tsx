@@ -8,8 +8,8 @@ export type SearchProps = {
 
 const Search: React.FC<SearchProps>  = ({}) => {
 	return (
-		<div className="container">
- 			No resoults
+		<div className="container search">
+ 			<p className='search__message'>Has una búsqueda!</p>
  		</div>
 	);
 };

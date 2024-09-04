@@ -30,9 +30,9 @@ const Header: React.FC<HeaderProps>  = ({}) => {
 				<div className="search">
 					<form onSubmit={handleSubmit} className='search__form'>
 						<input type="text" className="search__input" name='search' value={searchQuery}
-        onChange={(event) => setSearchQuery(event.target.value)}/>
-						<button type="submit" className="search__button">
-							<FaSearch className="icon-search"/>
+        onChange={(event) => setSearchQuery(event.target.value)} aria-label='Search'/>
+						<button type="submit" className="search__button" name='search' aria-label="Buscador">
+							<FaSearch className="icon-search" aria-label='Icono del buscador'/>
 						</button>
 					</form>
 				</div>

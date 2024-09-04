@@ -1,3 +1,33 @@
-.result {
-  
+.results {
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  &__no-results {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(240px, 1fr));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .item {
+      border-bottom: thin solid #eee;
+      cursor: pointer;
+      width: 100%;
+      list-style: none;
+
+      &__content{
+        display: flex;
+        width: 100%;
+      }
+
+
+    }
+  }
+
 }
